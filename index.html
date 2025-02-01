@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c3beabae37.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="cursor"></div>
     <div class="glow"></div>
@@ -21,122 +23,209 @@
 
                 <nav>
                     <div class="link-container">
-                        <a href="#" class="link-text">
-                            <span class="horizontal-line"></span>
+                        <a class="link-text link-active" data-section="about">
+                            <span class="horizontal-line horizontal-line-active"></span>
                             <span><strong>ABOUT</strong><span>
                         </a>
                     </div>
                     <div class="link-container">
-                        <a href="#" class="link-text">
-                            <span class="horizontal-line"></span>  
+                        <a class="link-text" data-section="experience">
+                            <span class="horizontal-line"></span>
                             <span><strong>EXPERIENCE</strong><span>
                         </a>
                     </div>
                     <div class="link-container">
-                        <a href="#" class="link-text">
-                            <span class="horizontal-line"></span>  
+                        <a class="link-text" data-section="education">
+                            <span class="horizontal-line"></span>
+                            <span><strong>EDUCATION</strong><span>
+                        </a>
+                    </div>
+                    <div class="link-container">
+                        <a class="link-text">
+                            <span class="horizontal-line" data-section="projects"></span>
                             <span><strong>PROJECTS</strong><span>
                         </a>
                     </div>
                 </nav>
             </div>
-
+            <script src="scripts/activeLink.js"></script>
             <div class="social-links">
-                <a href="#" class="social-link">
+                <a href="https://www.linkedin.com/in/madhavchandok/" class="social-link" target="_blank"
+                    rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#" class="social-link">
+                <a href="https://github.com/madhavchandok1" class="social-link" target="_blank"
+                    rel="noopener noreferrer">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="#" class="social-link">
+                <a href="https://www.instagram.com/madhavchandok1/" class="social-link" target="_blank"
+                    rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="#" class="social-link">
+                <a href="https://www.youtube.com/@mrtrojangamingyt" class="social-link" target="_blank"
+                    rel="noopener noreferrer">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
             </div>
         </aside>
 
         <main class="main-content">
-            <section class="section">
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="section">
                 <h3 class="section-heading">ABOUT</h3>
-                <p class="description">
-                    My journey into software development began with a fascination for using technology to solve real-world problems. I'm driven by the power of code to transform complex challenges into elegant solutions. This passion has led me to explore a range of technologies, including cloud computing (iPaaS), .NET development (ASP.NET MVC, ASP.NET WebAPI), and Python frameworks like FastAPI, Flask, and Django.
+                <p class="description" style="margin-top: 1rem">
+                    My journey into software development began with a fascination for using technology to solve
+                    real-world problems. I'm driven by the power of code to transform complex challenges into elegant
+                    solutions. This passion has led me to explore a range of technologies, including cloud computing
+                    (iPaaS), .NET development (ASP.NET MVC, ASP.NET WebAPI), and Python frameworks like FastAPI, Flask,
+                    and Django.
                 </p>
-                <p class="description" style="margin-top: 1rem;">
-                    I thrive in collaborative environments where I can combine my strategic mindset with innovative thinking to deliver impactful results. And as a lifelong learner, I'm deeply committed to staying ahead of the curve in our dynamic technological landscape.
+                <p class="description" style="margin-top: 1rem">
+                    I thrive in collaborative environments where I can combine my strategic mindset with innovative
+                    thinking to deliver impactful results. And as a lifelong learner, I'm deeply committed to staying
+                    ahead of the curve in our dynamic technological landscape.
                 </p>
             </section>
 
-            <section class="section">
+            <!-- EXPERIENCE SECTION -->
+            <section id="experience" class="section">
                 <h3 class="section-heading">EXPERIENCE</h3>
+
+                <!-- CELEBAL TECHNOLOGIES, JAIPUR -->
                 <div class="experience-item">
-                    <div class="date">2024 — PRESENT</div>
-                    <div class="job-title">Senior Frontend Engineer, Accessibility · Klaviyo</div>
+                    <div class="date">MAY, 2023 — PRESENT</div>
+                    <a href="https://celebaltech.com/" target="_blank" rel="noopener noreferrer">
+                        <div class="job-title">Cloud Integration Engineer, App Development · Celebal Technologies,
+                            Jaipur</div>
+                    </a>
                     <div class="description">
-                        Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
+                        <p>1. Designed and implemented Azure Logic Apps, Azure Functions, and Azure Service Bus
+                            solutions for seamless system integration, leveraging Azure DevOps for automated
+                            deployments.</p><br>
+                        <p>2. Developed robust MVC and Web API applications using .NET Core, creating reusable
+                            components and RESTful APIs to enhance system performance and maintainability.</p><br>
+                        <p>3. Built and integrated backend services with FastAPI and Flask, creating efficient
+                            Python-based web applications and RESTful APIs for scalable and reliable solutions.</p>
                     </div>
                     <div class="tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Storybook</span>
+                        <span class="tag">.NET Framework</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">ASP.NET MVC</span>
+                        <span class="tag">ASP.NET WebAPI</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Azure Functions</span>
+                        <span class="tag">Azure Logic Apps</span>
+                        <span class="tag">Azure Service Bus</span>
+                        <span class="tag">Azure APIM</span>
+                        <span class="tag">Azure Storage Accounts</span>
+                        <span class="tag">Azure Integration Account</span>
                     </div>
                 </div>
 
+                <!-- LETS GROW MORE, NOIDA -->
                 <div class="experience-item">
-                    <div class="date">2024 — PRESENT</div>
-                    <div class="job-title">Senior Frontend Engineer, Accessibility · Klaviyo</div>
+                    <div class="date">SEPTEMBER, 2021 — OCTOBER, 2021</div>
+                    <a href="https://letsgrowmore.in/" target="_blank" rel="noopener noreferrer">
+                        <div class="job-title">Web Development Intern · LetsGrowMore, Noida</div>
+                    </a>
                     <div class="description">
-                        Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
+                        <p style="padding-bottom:10px; text-align: left;">1. Created a single responsive webpage using HTML, CSS, and
+                            JavaScript.</p>
+                        <p style="padding-bottom:10px; text-align: left;">2. Deploy a React Application that fetches data from an API and
+                            shows it on a webpage.</p>
+                        <p style="padding-bottom:10px; text-align: left;">3. Prioritized and problem-solved several tasks concurrently with
+                            minimum supervision. </p>
                     </div>
                     <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
                         <span class="tag">JavaScript</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Storybook</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">API Integration</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION SECTION -->
+            <section id="education" class="section">
+                <h3 class="section-heading">EDUCATION</h3>
+
+                <!-- IIMT College of Engineering Greater -->
+                <div class="experience-item">
+                    <div class="date">SEPTEMBER, 2019 — JULY 2023</div>
+                    <a href="https://aktu.ac.in/" target="_blank" rel="noopener noreferrer">
+                        <div class="job-title">Bachelor of Technology, Information Technology<br><span
+                                style="font-size: 1rem; padding-bottom:4px;">Dr. A.P.J Abdul Kalam Technical University,
+                                Lucknow</span>
+                            <br> <span style="font-size: 0.85rem;">IIMT College of Engineering, Greater Noida</span>
+                        </div>
+                    </a>
+                    <div class="description">
+                        <p style="padding-bottom:4px;">🎯 B.Tech in Information Technology with <strong
+                                style="color: white;">8.54 CGPA</strong> </p>
+                        <p style="padding-bottom:2rem;">🎯 <strong style="color: white;">Scholarship recipient</strong>
+                            for academic excellence in branch ranking</p>
+                        <h4 style="padding-bottom:8px;">Key Subjects and Knowledge Area</h4>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Cloud Computing
+                            </strong> – Virtualization, Azure, Google Cloud, Distributed Systems</p>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Software
+                                Engineering </strong> – SDLC, Agile, DevOps, Design Patterns</p>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Algorithms &
+                                Data Structures </strong> – Time Complexity, Sorting, Graphs, Dynamic Programming</p>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Artificial
+                                Intelligence </strong> – Machine Learning, Neural Networks, NLP, AI Ethics</p>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Artificial
+                                Intelligence </strong> – Process Management, Memory Allocation, File Systems</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Google Cloud</span>
+                        <span class="tag">Github</span>
+                        <span class="tag">Problem Solving</span>
                     </div>
                 </div>
 
+                <!-- 12th Standard -->
                 <div class="experience-item">
-                    <div class="date">2024 — PRESENT</div>
-                    <div class="job-title">Senior Frontend Engineer, Accessibility · Klaviyo</div>
+                    <div class="date">APRIL, 2017 — MARCH 2019</div>
+                    <a href="https://aktu.ac.in/" target="_blank" rel="noopener noreferrer">
+                        <div class="job-title">Higher Secondary , Information Technology<br><span
+                                style="font-size: 1rem; padding-bottom:4px;">Dr. A.P.J Abdul Kalam Technical University,
+                                Lucknow</span>
+                            <br> <span style="font-size: 0.85rem;">IIMT College of Engineering, Greater Noida</span>
+                        </div>
+                    </a>
                     <div class="description">
-                        Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
+                        <p style="padding-bottom:4px;">🎯 B.Tech in Information Technology with <strong
+                                style="color: white;">8.54 CGPA</strong> </p>
+                        <p style="padding-bottom:2rem;">🎯 <strong style="color: white;">Scholarship recipient</strong>
+                            for academic excellence in branch ranking</p>
+                        <h4 style="padding-bottom:8px;">Key Subjects and Knowledge Area</h4>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Cloud Computing
+                            </strong> – Virtualization, Azure, Google Cloud, Distributed Systems</p>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Software
+                                Engineering </strong> – SDLC, Agile, DevOps, Design Patterns</p>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Algorithms &
+                                Data Structures </strong> – Time Complexity, Sorting, Graphs, Dynamic Programming</p>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Artificial
+                                Intelligence </strong> – Machine Learning, Neural Networks, NLP, AI Ethics</p>
+                        <p style="padding-bottom:4px; font-size:small">📌 <strong style="color: white;">Artificial
+                                Intelligence </strong> – Process Management, Memory Allocation, File Systems</p>
                     </div>
                     <div class="tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Storybook</span>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="date">2024 — PRESENT</div>
-                    <div class="job-title">Senior Frontend Engineer, Accessibility · Klaviyo</div>
-                    <div class="description">
-                        Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
-                    </div>
-                    <div class="tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Storybook</span>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="date">2024 — PRESENT</div>
-                    <div class="job-title">Senior Frontend Engineer, Accessibility · Klaviyo</div>
-                    <div class="description">
-                        Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
-                    </div>
-                    <div class="tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Storybook</span>
+                        <span class="tag">C</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Google Cloud</span>
+                        <span class="tag">Github</span>
+                        <span class="tag">Problem Solving</span>
                     </div>
                 </div>
             </section>
@@ -144,4 +233,5 @@
     </div>
 
 </body>
+
 </html>
