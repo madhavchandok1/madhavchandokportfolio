@@ -16,12 +16,12 @@ body {
     color: #94a3b8;
     /* font-family: system-ui, -apple-system, sans-serif; */
     font-family: "Inter", serif;
-    /* cursor: none; */
+    cursor: none;
     line-height: 1.6;
 }
 
 a:hover {
-    /* cursor: none; */
+    cursor: none;
 }
 
 .glow {
