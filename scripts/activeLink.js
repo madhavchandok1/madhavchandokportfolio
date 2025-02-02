@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (section) {
                 window.scrollTo({
-                    top: section.offsetTop - 80, // Adjust for fixed headers
+                    top: section.offsetTop - 75, // Adjust for fixed headers
                     behavior: "smooth"
                 });
             }
