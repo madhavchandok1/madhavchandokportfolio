@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./img/webLogo.ico">
     <title>Madhav's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c3beabae37.js" crossorigin="anonymous"></script>
@@ -15,13 +15,18 @@
     <div class="glow"></div>
     <script src="scripts/mouseHovering.js"></script>
 
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <p id="popup-message"></p>
+        </div>
+    </div>
 
     <div class="container">
         <aside class="sidebar">
             <div>
                 <h1 class="name">Madhav Chandok</h1>
                 <div class="title">Software Engineer</div>
-                <div class="bio">Building scalable and efficient solutions for modern applications.</div>
+                <div class="bio">Innovating with precision to power the next generation of softwares.</div>
 
                 <nav>
                     <div class="link-container">
@@ -96,6 +101,9 @@
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
+                <a href="mailto:er.madhavchandok@gmail.com" class="social-link"">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
             </div>
 
             <!-- FOOTER SECTION -->
@@ -114,9 +122,11 @@
                 <p class="description">
                     My journey into software development began with a fascination for using technology to solve
                     real-world problems. I'm driven by the power of code to transform complex challenges into elegant
-                    solutions. This passion has led me to explore a range of technologies, including <span class="about-description-bold">Cloud Computing
-                    (iPaaS)</span>, <span class="about-description-bold">.NET development (ASP.NET MVC, ASP.NET WebAPI)</span>, and Python frameworks like <span class="about-description-bold">FastAPI, Flask,
-                    and Django</span>.
+                    solutions. This passion has led me to explore a range of technologies, including <span
+                        class="about-description-bold">Cloud Computing
+                        (iPaaS)</span>, <span class="about-description-bold">.NET development (ASP.NET MVC, ASP.NET
+                        WebAPI)</span>, and Python frameworks like <span class="about-description-bold">FastAPI, Flask,
+                        and Django</span>.
                 </p>
                 <p class="description">
                     I thrive in collaborative environments where I can combine my strategic mindset with innovative
@@ -138,14 +148,17 @@
                     </a>
                     <div class="description">
                         <p><i class="fa-regular fa-circle-check"
-                            style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Designed and implemented Azure Logic Apps, Azure Functions, and Azure Service Bus
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Designed and
+                            implemented Azure Logic Apps, Azure Functions, and Azure Service Bus
                             solutions for seamless system integration, leveraging Azure DevOps for automated
                             deployments.</p><br>
                         <p><i class="fa-regular fa-circle-check"
-                            style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Developed robust MVC and Web API applications using .NET Core, creating reusable
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Developed robust MVC
+                            and Web API applications using .NET Core, creating reusable
                             components and RESTful APIs to enhance system performance and maintainability.</p><br>
                         <p><i class="fa-regular fa-circle-check"
-                            style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Built and integrated backend services with FastAPI and Flask, creating efficient
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Built and integrated
+                            backend services with FastAPI and Flask, creating efficient
                             Python-based web applications and RESTful APIs for scalable and reliable solutions.</p>
                     </div>
                     <div class="tags">
@@ -173,15 +186,18 @@
                     </a>
                     <div class="description">
                         <p style="padding-bottom:10px; text-align: left;"><i class="fa-regular fa-circle-check"
-                            style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Created a single responsive webpage using
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Created a single
+                            responsive webpage using
                             HTML, CSS, and
                             JavaScript.</p>
                         <p style="padding-bottom:10px; text-align: left;"><i class="fa-regular fa-circle-check"
-                            style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Deploy a React Application that fetches
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Deploy a React
+                            Application that fetches
                             data from an API and
                             shows it on a webpage.</p>
                         <p style="padding-bottom:10px; text-align: left;"><i class="fa-regular fa-circle-check"
-                            style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Prioritized and problem-solved several
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> Prioritized and
+                            problem-solved several
                             tasks concurrently with
                             minimum supervision. </p>
                     </div>
@@ -211,22 +227,34 @@
                     </a>
                     <div class="description">
                         <p style="padding-bottom:4px;font-size:0.875rem;"><i class="fa-regular fa-circle-check"
-                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> B.Tech in Information Technology with <strong
-                                style="color: white;">8.54 CGPA</strong> </p>
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> B.Tech in Information
+                            Technology with <strong style="color: white;">8.54 CGPA</strong> </p>
                         <p style="padding-bottom:2rem;font-size:0.875rem;"><i class="fa-regular fa-circle-check"
-                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong style="color: white;">Scholarship
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong
+                                style="color: white;">Scholarship
                                 recipient</strong>
                             for academic excellence in branch ranking</p>
                         <h4 style="padding-bottom:8px;">Key Subjects and Knowledge Area</h4>
-                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file" style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong style="color: white;">Cloud Computing
+                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file"
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong
+                                style="color: white;">Cloud Computing
                             </strong> – Virtualization, Azure, Google Cloud, Distributed Systems</p>
-                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file" style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong style="color: white;">Software
+                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file"
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong
+                                style="color: white;">Software
                                 Engineering </strong> – SDLC, Agile, DevOps, Design Patterns</p>
-                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file" style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong style="color: white;">Algorithms &
+                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file"
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong
+                                style="color: white;">Algorithms &
                                 Data Structures </strong> – Time Complexity, Sorting, Graphs, Dynamic Programming</p>
-                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file" style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong style="color: white;">Artificial
+                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file"
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong
+                                style="color: white;">Artificial
                                 Intelligence </strong> – Machine Learning, Neural Networks, NLP, AI Ethics</p>
-                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file" style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong style="color: white;">Operating Systems </strong> – Process Management, Memory Allocation, File Systems</p>
+                        <p style="padding-bottom:4px; font-size:0.875rem;"><i class="fa-solid fa-file"
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong
+                                style="color: white;">Operating Systems </strong> – Process Management, Memory
+                            Allocation, File Systems</p>
                     </div>
                     <div class="tags">
                         <span class="tag">C</span>
@@ -251,7 +279,8 @@
                     </a>
                     <div class="description">
                         <p style="padding-bottom:4px;font-size:0.875rem;"><i class="fa-regular fa-circle-check"
-                            style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong style="color: white;">Scored 67%</strong> in CBSE
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong
+                                style="color: white;">Scored 67%</strong> in CBSE
                             Examination </p>
                     </div>
                     <div class="tags">
@@ -272,7 +301,8 @@
                     </a>
                     <div class="description">
                         <p style="padding-bottom:4px;font-size:0.875rem;"><i class="fa-regular fa-circle-check"
-                            style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong style="color: white;">Scored 9.4 CGPA</strong> in CBSE
+                                style="color: rgba(94, 234, 212, 1); margin-right: 0.5rem;"></i> <strong
+                                style="color: white;">Scored 9.4 CGPA</strong> in CBSE
                             Examination </p>
                     </div>
                 </div>
@@ -294,9 +324,10 @@
                             compliance, and governance, making it ideal for beginners looking to understand Azure
                             fundamentals.
                         </p>
-                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/MadhavChandok-7821/383C5C23ED79DCA8?sharingId=E0B6B890B3E6B950" class="project-link"
-                            target="_blank" rel="noopener noreferrer">
-                            View Certificate <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/MadhavChandok-7821/383C5C23ED79DCA8?sharingId=E0B6B890B3E6B950"
+                            class="project-link" target="_blank" rel="noopener noreferrer">
+                            View Certificate <svg width="16" height="16" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
@@ -328,9 +359,10 @@
                             working with cloud-based applications.
                         </p>
 
-                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/MadhavChandok-7821/B38AD2877362DD7C?sharingId=E0B6B890B3E6B950" class="project-link"
-                            target="_blank" rel="noopener noreferrer">
-                            View Certificate <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/MadhavChandok-7821/B38AD2877362DD7C?sharingId=E0B6B890B3E6B950"
+                            class="project-link" target="_blank" rel="noopener noreferrer">
+                            View Certificate <svg width="16" height="16" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
@@ -354,6 +386,44 @@
             <!-- PROJECTS SECTION -->
             <section id="projects" class="section">
                 <h3 class="section-heading">PROJECTS</h3>
+
+                <div class="project-card">
+                    <div class="date">AUGUST, 2024 — PRESENT</div>
+                    <h3 class="project-title">Temporary File Sharing System with .NET Core WebAPI</h3>
+                    <div class="project-description">
+                        A secure and scalable file-sharing platform built to allow users to upload and share files
+                        temporarily, with automatic deletion after 30 minutes for enhanced data privacy.
+                        <ul class="project-features">
+                            <li class="feature-item"><strong style="color: white;">Secure API Endpoints:</strong>
+                                Developed using .NET Core WebAPI, ensuring secure file uploads and downloads through
+                                authenticated access.</li>
+                            <li class="feature-item"><strong style="color: white;">User Authentication:</strong>
+                                Integrated JWT authentication for user login and registration, enabling secure access to
+                                the file-sharing platform.</li>
+                            <li class="feature-item"><strong style="color: white;">Azure Blob Storage
+                                    Integration:</strong>
+                                Utilized Azure Blob Storage to efficiently store uploaded files with the ability to
+                                automatically delete files after 30 minutes for enhanced security and privacy.
+                            </li>
+                            <li class="feature-item"><strong style="color: white;">Token-Based Access:</strong>
+                                Implemented secure file sharing via unique access tokens, allowing users to share files
+                                safely with specific individuals.</li>
+                            <li class="feature-item"><strong style="color: white;">Scalable Design:</strong>
+                                Optimized for high performance, ensuring seamless file transfers and robust handling of
+                                multiple concurrent requests.</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">.NET Core WebAPI</span>
+                            <span class="tag">Azure Blob Storage</span>
+                            <span class="tag">JWT Authentication</span>
+                            <span class="tag">Visual Studio 2022</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/madhavchandok1/TempFileShare" class="project-link"
+                        target="_blank" rel="noopener noreferrer">
+                        View Project <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
 
                 <div class="project-card">
                     <div class="date">JULY, 2021 — AUGUST 2021</div>

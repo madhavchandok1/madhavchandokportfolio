@@ -49,6 +49,33 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 
+
+/* Styles for the Custom Popup */
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.popup-content {
+    background-color: #0a2027;
+    padding: 1rem 5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    color: white;
+}
+
 .container {
     display: flex;
     min-height: 100vh;
@@ -58,7 +85,6 @@ a:hover {
     position: fixed;
     top: 5rem;
     left: 20rem;
-    /* width: 600px; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -177,8 +203,8 @@ nav {
 
 .social-links {
     display: flex;
-    gap: 3rem;
-    margin-top: auto;
+    gap: 2rem;
+    margin: auto;
     padding-bottom: 2rem;
 }
 
@@ -454,7 +480,7 @@ nav {
     top: 0.7rem;
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #22d3ee;
+    background-color: rgba(94, 234, 212, 1);
     border-radius: 50%;
 }
 
@@ -761,5 +787,9 @@ textarea:focus {
 
     .bio {
         font-size: 0.9rem;
+    }
+
+    .social-links {
+        margin-left: 0;
     }
 }

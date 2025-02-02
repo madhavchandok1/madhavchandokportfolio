@@ -24,14 +24,24 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         return response.json();
     })
     .then(data => {
-        alert('Your message has been submitted successfully!');
+        displayPopup("Your message has been sent successfully. We'll get back to you soon!");
+    
         submitButton.innerHTML = 'Submit <i class="fa-regular fa-paper-plane" style="margin-left: 1rem;"></i>';
         submitButton.disabled = false;
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Failed to submit your message. Please try again.');
+        displayPopup('Failed to submit your message. Please try again.');
+
         submitButton.innerHTML = 'Submit <i class="fa-regular fa-paper-plane" style="margin-left: 1rem;"></i>';
         submitButton.disabled = false;
     });
 });
+
+function displayPopup(message) {
+    document.getElementById('popup-message').textContent = message;
+    document.getElementById('popup').style.display = 'flex';
+    setTimeout(function() {
+        document.getElementById('popup').style.display = 'none';
+    }, 3000);
+}
