@@ -215,7 +215,6 @@ nav {
 
 #about{
     margin-top: 2rem;
-    padding: 0 1.5rem;
     padding-bottom: 4rem;
     
 }
@@ -471,7 +470,7 @@ nav {
 }
 
 .project-link:hover {
-    background-color: rgba(94, 234, 212, 1);
+    background-color: rgb(94, 234, 212);
     color: #0f172a;;
 }
 
