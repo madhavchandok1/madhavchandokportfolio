@@ -716,6 +716,7 @@ textarea:focus {
 
     .footer {
         padding-bottom: 0;
+        display: none;
     }
 
     .main-content {
