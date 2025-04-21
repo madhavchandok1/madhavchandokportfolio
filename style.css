@@ -15,7 +15,7 @@ body {
     background-color: #0f172a;
     color: #94a3b8;
     font-family: "Inter", serif;
-    /* cursor: none; */
+    cursor: none;
     line-height: 1.6;
 }
 
@@ -84,7 +84,7 @@ a:hover {
 .sidebar {
     position: fixed;
     top: 5rem;
-    left: 20rem;
+    left: clamp(2rem, 20vh, 20rem);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -227,10 +227,10 @@ nav {
 }
 
 .main-content {
-    margin-left: calc(300px + 35rem);
+    margin-left: calc(300px + clamp(10rem, 20vw, 35rem));
     padding: 2rem;
     padding-left: 4rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin-right: 10rem;
     min-height: calc(100vh - 120px);
 }
